@@ -1,0 +1,136 @@
+
+.show-post.show {
+ 
+  z-index: 1030;
+  transition: all 0.3s ease-in-out;
+  min-height: 300px;
+}
+.show-post.show:before {
+  content:"";
+  background: url(images/animation.gif) top center no-repeat #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1030;
+}
+.show-post{
+  position: relative;
+  overflow: hidden;
+}
+.affiliate-wrapper,
+.custom-filters,
+.custom-filters div{
+  box-sizing: border-box !important;
+}
+.affiliate-wrapper form {
+  overflow: hidden;
+  width: 100%;
+
+}
+.filter-results-title{
+  font-size: 22px;
+  color: rgb(38,130,57);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.filter-title{
+  font-size: 16px;
+    line-height: 1.57;
+    color: rgb(38,130,57);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+ul.custom-filters li {
+  list-style: none;
+  margin-left: 0 !important;
+}
+
+label.checkbox-label {
+  margin-left: 10px;
+  font-weight: normal;
+}
+.checkbox-div{
+    display: flex;
+
+}
+.filter-btn{
+  
+  background: rgb(38,130,57) !important;
+  color: #fff !important;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.range-wrap {
+  position: relative;
+}
+#range-slider-value {
+  position: absolute;
+  top: -23px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
+
+.affiliate-wrapper form select, .affiliate-wrapper form label {
+  font-size: 16px;
+}
+
+.affiliate-wrapper form select{
+  position: relative;
+  background-color: transparent;
+  padding: 10px 10px 5px 2px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  border: none;
+  border: 1px solid rgb(185,184,184);
+  width: 100%;
+  outline: none;
+  margin-bottom:19px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(images/ic_arrow_down.svg) no-repeat;
+  background-position: 99% calc(50% + 2px);
+  background-size: 12px 9px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.all-ranges {
+  display: flex;
+  justify-content: space-between;
+}
+.form-btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#clear-list {
+  background: red;
+  color: #fff !important;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+  border:1px solid #e6e6e6;
+}
+input[type="range"] {
+  width: 100%;
+}
+@media (min-width:992px){
+  .custom-filters {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+}
+}
